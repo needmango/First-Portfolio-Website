@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.2/css/fontawesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap" rel="stylesheet">
+    <link href="styles2.css" rel="stylesheet">
+</head>
+<body>
+    
+<!------------------------------- nav ------------------------------->
+<!--<div class="wrapper">-->
+<div class="background-container">
+    <nav>
+        <a href="index.html"><img src="assets/logo.png"></a>
+        <div class="nav-links" id="navLinks">
+            <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="projects.html">PROJECTS</a></li>
+                <li><a href="wibut.html">WHAT I'VE BEEN UP TO</a></li>
+            </ul>
+        </div>
+        <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+    </nav>
+</div>
+<!--</div>-->
+
+<!------------------------------- main content ------------------------------->
+<main>
+    <div class="content-left">
+        <img src="assets/face.png" class="face">
+        <h2>Luca Henderson</h2>
+        <div class="social">
+            <a href="https://www.linkedin.com/in/lucas-henderson-90667b187/"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/needmango"><i class="fab fa-github"></i></a>
+            <a href="https://angel.co/u/lucas-henderson"><i class="fab fa-angellist"></i></a>
+        </div>
+    </div>
+    <div class="content-right">
+        <h1>About</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eu erat commodo,
+        tristique eros vitae, pretium orci. Phasellus sapien leo, viverra quis rhoncus volutpat,
+        faucibus eget ex. Donec consectetur eget nisi et ullamcorper. Maecenas lobortis nulla non
+        lorem condimentum, ut sollicitudin turpis mollis. Morbi sodales magna nec ultrices mollis.
+        Nulla euismod mi at sagittis facilisis. Integer et sollicitudin metus. In in nunc sed risus
+        varius luctus lacinia vel odio.<br> <br>Cras ac rhoncus purus, at consequat magna. Vestibulum pellentesque consequat odio,
+        eu varius arcu accumsan a. Nam sit amet dictum nunc. Suspendisse aliquet euismod dolor
+        vel sagittis. Duis vitae laoreet urna. Nunc rhoncus interdum mauris, at vestibulum neque
+        accumsan sed. Praesent at dignissim ante. Suspendisse ac tristique metus. Nullam ultrices
+        aliquam nisi aliquam efficitur. Aenean pretium, leo vel tincidunt hendrerit, leo nunc interdum
+        est, vel venenatis massa orci eu mauris. Praesent rhoncus auctor enim, id efficitur arcu blandit
+        sit amet. Morbi leo sapien, ultrices in ante in, euismod dapibus odio. Maecenas dictum, urna
+        eu dignissim feugiat, diam purus ornare neque, sed rutrum lacus velit et purus. Nulla vitae aliquet sem.</p>
+    </div>
+</main>
+
+<!------------------------------- footer ------------------------------->
+<footer>
+    <div class= "footer-container">
+        <div class="footer">
+            <div class="footer1">
+                <h2>Luca Henderson</h2>
+            </div>
+            
+            <div class="footer2">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="projects.html">Projects</a>
+                <a href="wibut.html">What I've Been Up To</a>
+            </div>
+            
+            <div class="footer3">
+                <a href="https://www.linkedin.com/in/lucas-henderson-90667b187/"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/needmango"><i class="fab fa-github"></i></a>
+                <a href="https://angel.co/u/lucas-henderson"><i class="fab fa-angellist"></i></a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!--<-------------JavaScript for Toggle Menu------------>
+<script>
+    
+    var navLinks = document.getElementById("navLinks");
+    
+    function showMenu(){
+        navLinks.style.right ="0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+    
+</script>
+</body>
+</html>

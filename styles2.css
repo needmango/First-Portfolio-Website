@@ -1,0 +1,291 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+        font-family: 'Titillium Web', sans-serif;
+
+}
+
+/*html, body {*/
+/*    height: 100%;*/
+/*}*/
+
+/*.wrapper {*/
+/*    min-height: 100%;*/
+/*}*/
+/*------------------- background ------------------------*/
+.background-container{
+    background-size: 40px 40px;
+    background-image: radial-gradient(circle, #696969 1px, rgba(0, 0, 0, 0) 1px);
+    position: relative;
+    font-family: 'Titillium Web', sans-serif;
+    /*padding-bottom: 348px;*/
+}
+
+/*------------------- nav ------------------------*/
+nav {
+    display: flex;
+    padding: 2% 6%;
+    align-items: center;
+    justify-content: space-between;
+}
+nav img {
+    width: 150px;
+}
+.nav-links {
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul li {
+    list-style: none;
+    display: inline-block;
+    position: relative;
+    padding: 8px 12px;
+}
+.nav-links ul li a {
+    color: black;
+    text-decoration: none;
+    font-size: 17px;
+        font-weight: 600;
+}
+.nav-links ul li::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: black;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after {
+    width: 100%;
+    
+}
+.fa-solid  {
+    display: none;
+}
+/*------------------- main ------------------------*/
+main {
+    background-size: 40px 40px;
+    background-image: radial-gradient(circle, #696969 1px, rgba(0, 0, 0, 0) 1px);
+    display: flex;
+    /*height stuff i found to calc height of main*/
+    height: calc( 100vh - 161px);
+    align-items: center;
+    justify-content: center;
+}
+.face {
+    max-width: 200px;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 70px;
+}
+.content-left {
+    width: auto;
+    margin: 50px;
+    
+}
+.social{
+    display: flex;
+    justify-content: start;
+    margin: 3rem 0  3rem 0;
+}
+.social a{
+    margin: 0 4rem 0 5px;
+    text-decoration: none;
+    color: black;
+    font-size: 30px;
+    transition: .5s;
+}
+.social a:hover{
+    transform: translate(0, -5px);
+}
+.content-right {
+    width: 30%;
+    margin: 50px;
+    padding: 10px;
+}
+.content-right h1 {
+    font-size: 50px;
+            font-weight: 700;
+}
+.content-right p {
+
+    font-weight: 400;
+    font-size: 20px;
+}
+
+@media(max-width: 700px){
+    /*------ display none ------*/
+    .social {
+        display: none;
+    }
+    .content-left h2 {
+        display: none;
+    }
+
+    /*------ nav ------*/
+    nav img {
+        display: none;
+    }
+    .nav-links ul li{
+        display: block;
+    }
+    html, body {
+        /*still dunno how this solves my overflow*/
+        /*but oh well*/
+        overflow-x:hidden;
+    }
+    .nav-links{
+        position: absolute;
+        background: #e9d138;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        transition: 1s;
+        z-index: 2;
+    }
+    nav .fa-xmark{
+        display: block;
+        color: black;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+    nav .fa-bars{
+        display: block;
+        color: black;
+        margin: 38px 20px 0 0;
+        font-size: 30px;
+        cursor: pointer;
+    }
+    .nav-links ul{
+        padding: 30px;
+        
+    }
+    /*------ main ------*/
+    main {
+        height: 100%;
+        flex-direction: column-reverse;
+    }
+    .face {
+        margin-top: 40px;
+    }
+    .content-left {
+        margin: auto;
+    }
+    .content-right {
+        width: auto;
+        margin: auto;
+        padding-left: 40px;
+        padding-right: 55px;
+    }
+    .content-right h1 {
+        padding-bottom: 30px;
+    }
+    .content-right p {
+        background-color: white;
+    }
+}
+@media(max-width: 1000px){
+    /*------ display none ------*/
+    .social {
+        display: none;
+    }
+    .content-left h2 {
+        display: none;
+    }
+    /*------ main ------*/
+    main {
+        height: 100%;
+        flex-direction: column-reverse;
+    }
+    .face {
+        margin-top: 40px;
+    }
+    .content-left {
+        margin: auto;
+    }
+    .content-right {
+        width: auto;
+        margin: auto;
+        padding-left: 40px;
+        padding-right: 55px;
+    }
+    .content-right h1 {
+        padding-bottom: 30px;
+    }
+    .content-right p {
+        background-color: white;
+    }
+    
+}
+/*------------------- footer ------------------------*/
+
+.footer-container {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: white;
+    background-size: 40px 40px;
+    /*background-color: gray;*/
+    background-image: radial-gradient(circle, #696969 1px, rgba(0, 0, 0, 0) 1px);
+    display: flex;
+    /*margin-top: -348px;*/
+    /*clear: both;*/
+}
+.footer{
+    width: 80%;
+    text-align: center;
+    margin: 0 auto;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 4rem;
+}
+.footer1{
+    padding-top: 6rem;
+}
+.footer2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+}
+.footer2 a{
+    text-decoration: none;
+    color: black;
+    margin-left: 2rem;
+    transition: .5s;
+}
+.footer2 a:hover{
+    transform: translate(0, -5px);
+}
+.footer3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 3rem 0 0;
+
+}
+.footer3 a{
+    margin: 0 2rem;
+    text-decoration: none;
+    color: black;
+    font-size: 30px;
+    transition: .5s;
+}
+.footer3 a:hover{
+    transform: translate(0, -5px);
+}
+@media(max-width: 700px){
+    .footer1{
+        padding-top: 30px;
+    }
+    .footer3{
+        margin: 2rem 0 0;
+
+    }
+}
